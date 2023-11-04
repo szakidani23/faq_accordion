@@ -1,0 +1,41 @@
+.faq__left {
+  position: relative;
+  padding:7rem 0;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size:60rem;
+  background-position: top -2rem right 2.5rem;
+  background-repeat: no-repeat;
+  @media screen and (max-width:$bp-large) {
+   padding:0;
+   background-size: cover;
+   background-position: center -18.5rem;
+  }
+  &-imgbox {
+    display: block;
+    position:relative;
+    margin-left:-8.5rem;
+    @media screen and (max-width:$bp-large) {
+      margin-left:0;
+    }
+
+    &-img1 {
+      max-width: 100%;
+      @media screen and (max-width:$bp-large) {
+        max-width: 30rem;
+        margin: -16rem auto 10rem auto;
+      }
+    }
+
+    &-img2 {
+      position: absolute;
+      left:-9.5rem;
+      bottom:12rem;
+      max-width: 100%;
+      @media screen and (max-width:$bp-large) {
+        max-width: 12rem;
+        left:0;
+        bottom:13rem;
+      }
+    }
+  }
+}

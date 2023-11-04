@@ -1,0 +1,140 @@
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem; }
+  @media screen and (max-width: 37.5em) {
+    .attribution {
+      font-size: 1.2rem; } }
+  .attribution-link {
+    color: #fff; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  /* To make 1rem=10px then do this. Why? --> Easier to calculate with 10 */
+  font-size: 62.5%; }
+
+/* PRIMARY COLORS */
+/* BG GRADIENTS */
+/* DIVIDER */
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #1d1e35;
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  @media screen and (max-width: 37.5em) {
+    body {
+      margin: 0 4rem; } }
+
+.faq {
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 1.8rem;
+  box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 10px 16px -1px rgba(0, 0, 0, 0.31); }
+  @media screen and (max-width: 62.5em) {
+    .faq {
+      padding: 2.5rem 2.5rem 6.5rem 2.5rem;
+      margin-top: 15rem; } }
+  .faq__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    padding-right: 10rem; }
+    @media screen and (max-width: 62.5em) {
+      .faq__container {
+        flex-direction: column;
+        padding-right: 0;
+        gap: 0; } }
+
+.faq__left {
+  position: relative;
+  padding: 7rem 0;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-size: 60rem;
+  background-position: top -2rem right 2.5rem;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 62.5em) {
+    .faq__left {
+      padding: 0;
+      background-size: cover;
+      background-position: center -18.5rem; } }
+  .faq__left-imgbox {
+    display: block;
+    position: relative;
+    margin-left: -8.5rem; }
+    @media screen and (max-width: 62.5em) {
+      .faq__left-imgbox {
+        margin-left: 0; } }
+    .faq__left-imgbox-img1 {
+      max-width: 100%; }
+      @media screen and (max-width: 62.5em) {
+        .faq__left-imgbox-img1 {
+          max-width: 30rem;
+          margin: -16rem auto 10rem auto; } }
+    .faq__left-imgbox-img2 {
+      position: absolute;
+      left: -9.5rem;
+      bottom: 12rem;
+      max-width: 100%; }
+      @media screen and (max-width: 62.5em) {
+        .faq__left-imgbox-img2 {
+          max-width: 12rem;
+          left: 0;
+          bottom: 13rem; } }
+
+.faq__right {
+  margin-top: -5rem; }
+  .faq__right__title {
+    font-size: 3.2rem;
+    margin-bottom: 4rem; }
+    @media screen and (max-width: 62.5em) {
+      .faq__right__title {
+        text-align: center; } }
+
+.accordion {
+  max-width: 35rem; }
+  @media screen and (max-width: 62.5em) {
+    .accordion {
+      max-width: 100%; } }
+  .accordion__item {
+    position: relative; }
+  .accordion__question {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    user-select: none; }
+    .accordion__question:hover {
+      color: #f47c57; }
+    .accordion__question.open {
+      font-weight: 700; }
+  .accordion__icon {
+    color: #f47c57;
+    transition: transform .2s; }
+  .accordion .accordion__question.open .accordion__icon {
+    transform: rotate(-180deg); }
+  .accordion__answer {
+    margin-top: 1rem;
+    line-height: 2rem;
+    color: rgba(29, 30, 53, 0.7); }
+  .accordion__divider {
+    border-bottom: 0.1rem solid #e7e7e9;
+    /* Gray divider line */
+    position: absolute;
+    bottom: -1.7rem;
+    left: 0;
+    width: 100%; }

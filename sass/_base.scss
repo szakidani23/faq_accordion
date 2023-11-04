@@ -1,0 +1,55 @@
+.attribution { 
+  font-size: 1.5rem; text-align: center;margin-top: 2rem;
+  @media screen and (max-width:37.5em) {
+    font-size: 1.2rem;
+  }
+ &-link {
+  color: #fff;
+ }
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html {
+  /* To make 1rem=10px then do this. Why? --> Easier to calculate with 10 */
+  font-size: 62.5%; 
+}
+
+// COLORS
+  /* PRIMARY COLORS */
+$darkblue: hsl(238, 29%, 16%);
+$darkblue-lighter: hsla(238, 29%, 16%, 0.7);
+$lightred: hsl(14, 88%, 65%);
+  /* BG GRADIENTS */
+$lightviolet: hsl(273, 75%, 66%);
+$lightblue:hsl(240, 73%, 65%);
+  /* DIVIDER */
+$grayblue: hsl(240, 5%, 91%);
+
+$white: #fff;
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.2rem;
+  color: $darkblue;
+  background: linear-gradient(to bottom, $lightviolet, $lightblue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (max-width:37.5em) {
+    margin:0 4rem;
+  }
+}
+
+// RESPONSIVE BREAKPOINTS
+$bp-largestofall: 90em; //1440px
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
